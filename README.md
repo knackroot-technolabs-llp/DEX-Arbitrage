@@ -243,7 +243,7 @@ Eg:
 #
 
 #
-#### The config.json file will look like this :- 
+#### The configInsta.json file will look like this :- 
 ```json
 {
    "arbContract": "0x64066c4DA5953B282508c6b620243b6Cc3cfC66C",
