@@ -1,8 +1,6 @@
 //SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.4;
 
-import "hardhat/console.sol";
-
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 interface IERC20 {
@@ -60,7 +58,7 @@ contract Arb is Ownable {
     swap(_router1,_token1, _token2,_amount);
     uint token2Balance = IERC20(_token2).balanceOf(address(this));
     uint tradeableAmount = token2Balance - token2InitialBalance;
-    swap(_router2,_token2, _token1,tradeableAmount);
+    swap(_router2,_token2, _token1, tradeableAmount);
     uint endBalance = IERC20(_token1).balanceOf(address(this));
     require(endBalance > startBalance, "Trade Reverted, No Profit Made");
   }
