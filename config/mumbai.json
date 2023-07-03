@@ -1,0 +1,20 @@
+{
+    "arbContract": "0xDc3b7B3A954461A348E1692F388Bf9376A621ceF",
+    "minBasisPointsPerTrade": 0,
+    "routers": [
+      { "dex": "uniswap", "address": "0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff" },
+      { "dex": "sushiswap", "address": "0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506" }
+    ],
+    "baseAssets": [
+      { "sym": "TK1","address": "0xC1521cC3E57D1462d2059136C386e5eC7ECAe94c" }
+    ],
+    "tokens": [
+      {"sym": "TK2", "address": "0xF52E4ad9b5a33F51Bd47aeF526CB4316eFd2be5c" },
+      {"sym": "TK3", "address": "0x6c5cDE71980FEe69A4656C5760479B169505A334" }
+    ],
+    "routes": [
+      ["0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff","0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506","0xC1521cC3E57D1462d2059136C386e5eC7ECAe94c","0xF52E4ad9b5a33F51Bd47aeF526CB4316eFd2be5c"],
+      ["0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506","0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff","0xC1521cC3E57D1462d2059136C386e5eC7ECAe94c","0xF52E4ad9b5a33F51Bd47aeF526CB4316eFd2be5c"]
+    ]
+  }
+  
