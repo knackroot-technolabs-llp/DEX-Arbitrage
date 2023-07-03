@@ -5,24 +5,24 @@ This bot will move over certain decentralized exchanges and mark the price of ea
 
 # Setup Instructions
 
-## 1. Edit .env-example.txt file with your private key and rpc url.
-#
+## 1. Edit .env-example.txt file with your private key, rpc url and initial funding/investment amount.
+
 ## 2. Build using the following commands:
 
 ```shell
-git clone https://github.com/jamesbachini/DEX-Arbitrage.git
+git clone https://github.com/knackroot-technolabs-llp/DEX-Arbitrage.git
 cd DEX-Arbitrage
 mv .env-example.txt .env
 rm .env-example.txt 
 npm install
 ```
-#
+
 ## 3. Deploy the trading or arbitrage contract
 
 ```shell
 npx hardhat run --network <your-network> scripts/deploy.js
 ```
-#
+
 ## 4. Set the Configurations
 
 These configurations should be in the json file under the config folder. This configuration file will contain the details of your trading contract, the dex’s you want to trade on, the tokens you want to trade on, and also the routes you want to follow while trading.
@@ -120,31 +120,31 @@ Eg:
    ]
  }
 ```
-#
+
 ## 4. To fund the contract with all the baseAssets mentioned in config.json file.
 
 ```shell
 npx hardhat run --network goerli ./scripts/fund.js
 ```
-#
+
 ## 5. To check the balances of baseAssets of contract.
 
 ```shell
 npx hardhat run --network goerli ./scripts/balances.js
 ```
-#
+
 ## 6. To start with the trading.
 
 ```shell
 npx hardhat run --network goerli ./scripts/trade.js
 ```
-#
+
 ## 7. Finally to recover any funds.
 
 ```shell
 npx hardhat run --network goerli ./scripts/recover.js
 ```
-#
+
 # For Triangular Arbitrage Trading within single dex.
 
 Instatrade feature trades in the same interface between different tokens. It follows a triangular arbitrage bot method. Triangular arbitrage bot method makes the profit in the balance of BaseAsset by trading between two different tokens using one Stable coin.
@@ -167,7 +167,7 @@ Transaction Flow is :
 ```shell
 npx hardhat run --network <your-network> scripts/instadeploy.js
 ```
-#
+
 ## 2. Set the Configurations
 
 These configurations should be in the json file under the config folder. This configuration file will contain the details of your trading contract, the dex’s you want to trade on, the tokens you want to trade on, and also the routes you want to follow while trading.
@@ -261,7 +261,7 @@ Eg:
    ]
  }
 ```
-#
+
 ## 3. To start with the trading.
 
 ```shell
