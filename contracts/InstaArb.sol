@@ -108,7 +108,7 @@ contract InstaArb is Ownable {
           amtBack = getAmountOutMin(_router, tokens[i3], _baseAsset, amtBack);
           if (amtBack > _amount) {
             token1 = tokens[i1];
-            token2 = tokens[i2];
+            token2 = stables[i2];
             token3 = tokens[i3];
             break;
           }
@@ -146,5 +146,7 @@ contract InstaArb is Ownable {
     IERC20 token = IERC20(tokenAddress);
     token.transfer(msg.sender, token.balanceOf(address(this)));
   }
+
+	receive() external payable {}
 
 }
