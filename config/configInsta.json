@@ -1,0 +1,17 @@
+{
+    "arbContract": "0xaEc7168eB11Fa7b4dBC9351B7CCa011D8edaD523",
+    "minBasisPointsPerTrade": 0,
+    "routers": [
+      {"dex": "uniswap", "address": "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D"}
+    ],
+    "baseAssets": [
+      {"sym": "BASE", "address": "0x6819Dcef2946d755dB0Aa7B08EE654C96ac541Fe"}
+    ],
+    "stables": [
+      {"sym": "STB", "address": "0x7b72457F3e1fF6f6CB7280BD82dDceA805E136dd"}
+    ], 
+    "tokens": [
+      {"sym": "ALT1", "address": "0x55c7b14B80F7fCf21Aa6a7b34380c84446d28e7B"},
+      {"sym": "ALT2", "address": "0xAADfdeBF45D98b40d263f12203a96ca51e5d3AD8"}
+    ]
+  }
